@@ -3,12 +3,12 @@ from PIL import Image
 import pickle as pkl
 import numpy as np
 
-st.title('Pneumonia prediction based on chest X-Ray image')
+st.title('Handwritten Digit Recognition')
 
 input = open('lrc_mnist.pkl', 'rb')
 model = pkl.load(input)
 
-st.header('Upload chest X-Ray image')
+st.header('Upload handwritten digit iamge')
 uploaded_file = st.file_uploader("Choose an image file", type=(['png', 'jpg', 'jpeg']))
 
 if uploaded_file is not None:
